@@ -86,6 +86,7 @@ As principais variáveis do sistema podem ser ajustadas nos arquivos de cabeçal
 
 *   **`Broker.h` / `Broker.cpp`:**
     *   As credenciais de Wi-Fi (`WIFI_SSID`, `WIFI_PASS`) e MQTT (`MQTT_HOST`, `MQTT_PORT`, `MQTT_USER`, `MQTT_PASS`, `MQTT_TOPIC`) são gerenciadas internamente. É esperado um arquivo `config.h` para armazenar essas informações sensíveis.
+> Recomenda-se o uso de um arquivo `config.h` (não versionado) para dados sensíveis.
 *   **`DeepSleep.h`:**
     *   `DEEP_SLEEP_TIME_MIN`: Tempo que o dispositivo passa em *deep sleep* (em minutos).
     *   `AWAKE_CYCLE_TIME_SEC`: Duração do ciclo ativo após despertar (em segundos).
