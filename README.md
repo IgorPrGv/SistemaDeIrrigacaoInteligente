@@ -1,5 +1,11 @@
 # Protótipo automatizado com ESP32 para monitoramento e controle de irrigação com água condensada de ar-condicionado
 
+
+<p align="center">
+  <img src="assets/Grafico_Irrigacao_Nutec.png" width="600"/>
+</p>
+<p align="center"><em>Figura 1 – Esquemático do protótipo</em></p>
+
 ## Sumário
 
 - [Visão Geral](#visao-geral)
