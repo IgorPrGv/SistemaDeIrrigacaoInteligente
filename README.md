@@ -27,7 +27,7 @@ O sistema realiza:
 - Gerenciamento do consumo energético via *deep sleep*;
 - Controle automático da irrigação com regras de segurança.
 
-Todos os dados coletados (sensores e estado do sistema) são publicados remotamente via **MQTT**, permitindo **monitoramento em tempo real** por aplicações externas.
+Todos os dados coletados publicados remotamente via **MQTT**, permitindo **monitoramento em tempo real** no Grafana.
 
 <a id="principais-funcionalidades"></a>
 ## ⚙️ Principais Funcionalidades
