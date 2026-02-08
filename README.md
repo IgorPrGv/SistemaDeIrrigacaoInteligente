@@ -16,7 +16,6 @@
 - [Hardware utilizado](#hardware)
 - [Licença](#licenca)
 
----
 <a id="visao-geral"></a>
 ## 🔎 Visão Geral
 
@@ -30,7 +29,6 @@ O sistema realiza:
 
 Todos os dados coletados (sensores e estado do sistema) são publicados remotamente via **MQTT**, permitindo **monitoramento em tempo real** por aplicações externas.
 
----
 <a id="principais-funcionalidades"></a>
 ## ⚙️ Principais Funcionalidades
 
@@ -46,7 +44,6 @@ Todos os dados coletados (sensores e estado do sistema) são publicados remotame
 
 - **Comunicação Remota via MQTT**: Conecta-se a uma rede Wi-Fi para publicar todos os dados coletados (umidade, volume de água, bateria, estado da bomba) em um broker MQTT, permitindo o monitoramento à distância.
 
----
 <a id="ciclo-operacional"></a>
 ## 🔁 Ciclo Operacional
 
@@ -63,7 +60,6 @@ O sistema foi projetado para maximizar a eficiência energética seguindo o cicl
 
 4. **Hibernação (Deep Sleep)**: Finalizado o ciclo ativo, o ESP32 retorna ao *deep sleep* até o próximo despertar.
 
----
 <a id="arquitetura-e-modulos"></a>
 ## 🧩 Arquitetura e Módulos do Sistema
 
@@ -79,7 +75,6 @@ O projeto é estruturado de forma **modular**, facilitando manutenção, testes 
 | `WaterPump.cpp` / `.h`          | Controle da bomba d’água, incluindo regras e temporizadores de segurança.|
 | `DeepSleep.cpp` / `.h`          | Implementação da lógica de *deep sleep* e despertar do ESP32.            |
 
----
 <a id="configuracao"></a>
 ## Configuração
 As principais variáveis do sistema podem ser ajustadas nos arquivos de cabeçalho (`.h`) correspondentes:
@@ -98,7 +93,6 @@ As principais variáveis do sistema podem ser ajustadas nos arquivos de cabeçal
     *   `RES_MIN_PCT`: Percentual mínimo do reservatório para a bomba poder operar.
     *   `PUMP_RUN_TIME`: Duração do acionamento da bomba em milissegundos.
 
----
 <a id="hardware"></a>
 ## 🔩 Hardware utilizado
 
@@ -112,10 +106,3 @@ As principais variáveis do sistema podem ser ajustadas nos arquivos de cabeçal
 - Bateria Li-Ion / LiPo
 - Circuito divisor de tensão para leitura da bateria  
   (GPIOs 34 e 4)
-
----
-<a id="licenca"></a>
-## 📄 Licença
-
-Este projeto está licenciado sob a **Licença MIT**.  
-Consulte o arquivo [LICENSE](LICENSE) para mais informações.
